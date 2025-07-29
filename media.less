@@ -1,4 +1,7 @@
 @media  (max-width:1439px) {
+    .block_card .header_content .header_flex .advantage_cards .adv_card{
+        padding: 20px;
+    }
     .hedaerPageImg {
     position: relative;
     bottom: -30px;
@@ -328,7 +331,7 @@
     }
     .total_info{
         .total_line{
-            width: 280px !important;
+            width: auto !important;
             justify-content: center;
         }
     }
@@ -353,6 +356,9 @@
     
     .header_contentDelete{
             padding: 20px !important;
+        }
+        .block_card .header_content .header_flex .total_flex{
+            align-items: flex-start;
         }
 }
 @media (max-width: 1100px) {
@@ -1301,16 +1307,31 @@
         }
     }
     .total_info{
-        gap: 20px !important;
-        flex-direction: column;
+        gap: 20px !important;    
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
         .total_line{
-            width: 280px !important;
+            width: auto !important;
             justify-content: center;
             flex-direction: column;
         }
     }
 }
 @media (max-width: 500px){
+    .total_info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .block_card .header_content .header_flex .total_info .total_line{
+        flex-direction: row;
+    }
+    .about_info .table .left:nth-child(19) {
+        border-radius: 0 0 0 0;
+    }
+    .about_info .table .right:nth-child(20) {
+    border-radius: 0 0 20px 20px;
+}
     .about .about_wrapper .left_block .top_block h2 {
         font-size: 24px;
     }
@@ -1393,7 +1414,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .about_info .table .left:nth-child(1) {
-        border-radius: 0;
+        border-radius: 20px 20px 0 0;
     }
     .about_info .table .right:nth-child(2) {
         border-radius: 0;
